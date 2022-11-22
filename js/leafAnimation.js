@@ -34,8 +34,10 @@ const leafAnimation = () => {
     if (width <= 684 && key >= 4) {
       return 0;
     }
-
-    leaftsLocation.innerHTML += `<img src="${leafFileLocation + item}">`;
+    if (width <= 684 && key >= 2) {
+      return 0;
+    }
+    leaftsLocation.innerHTML += `<img src="${leafFileLocation + item}" />`;
   });
 };
 
