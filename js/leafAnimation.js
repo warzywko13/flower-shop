@@ -1,4 +1,4 @@
-const leafFileLocation = "./../img/leafts/";
+const leafFileLocation = "./img/leafts/";
 const leafts = [
   "leaft1.png",
   "leaft2.png",
