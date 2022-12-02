@@ -2,7 +2,8 @@ $nav-color: #494949;
 
 header {
   width: 100%;
-  height: 20vh;
+  min-height: 13vh;
+  max-height: 15rem;
 
   nav,
   .container,
@@ -19,7 +20,7 @@ header {
       position: absolute;
       top: 2rem;
       left: 5rem;
-      max-width: 200px;
+      max-width: 160px;
     }
 
     #hamburger-menu {

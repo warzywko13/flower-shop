@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css" />
+
+    <!-- JS -->
+    <script defer type="module" type="JavaScript" src="./js/index.js"></script>
+
+    <title>FLOWER SHOP</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="#">
+          <img
+            src="./img/logo.png"
+            alt="logo firmy różowy kwiat a pod nim napis FLOWER"
+          />
+        </a>
+        <i id="hamburger-menu" class="fa-solid fa-bars"></i>
+        <div id="navigation" class="container hide menu_animation">
+          <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about_us.html">O nas</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-panel">
+          <div class="company-data">
+            <div class="address">
+              <h3>FLOWER SHOP</h3>
+              <p>marsz. Józefa Piłsudskiego 106</p>
+              <p>50-014 Wrocław</p>
+            </div>
+
+            <div class="bank-account">
+              <h3>Numer konta</h3>
+              <p>ING BANK ŚLĄSKI SA O/WROCŁAW</p>
+              <p class="bolder">72 1050 1575 1000 0091 3926 6572</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <h3>Formularz Kontaktowy</h3>
+              <p>
+                <label for="rodo"
+                  >Zgoda na przetwarzanie danych osobowych:</label
+                >
+                <input type="checkbox" name="rodo" />
+              </p>
+
+              <p>
+                <label for="nameAndSurname">Imię i nazwisko:</label>
+                <input type="text" name="nameAndSurname" />
+              </p>
+
+              <p>
+                <label for="emailAddress">Adres e-mail:</label>
+                <input type="text" name="emailAddress" />
+              </p>
+
+              <p>
+                <label for="message">Treść wiadomości:</label>
+                <textarea name="message"></textarea>
+              </p>
+
+              <button>Wyślij</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="leafts"></div>
+  </body>
+</html>
