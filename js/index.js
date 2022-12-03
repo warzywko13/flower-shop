@@ -12,11 +12,5 @@ window.addEventListener("load", () => {
 });
 
 /* Gallery Image Settings */
-const images = document.querySelectorAll(".image-gallery img");
-const imageGallery = document.querySelector(".image-gallery");
-
-images.forEach((img, id) =>
-  img.addEventListener("click", () => {
-    openImage(imageGallery, images, id);
-  })
-);
+const imageGallery = document.querySelector("#image-gallery");
+openImage(imageGallery);
