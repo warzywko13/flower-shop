@@ -55,12 +55,18 @@
         margin: 1rem 0;
         padding: 0.8rem 3rem;
         text-transform: uppercase;
-        background: #d47195;
-        color: #fff;
+        background: $button-background;
+        color: $button-color;
         font-size: 1.5rem;
         border: none;
         border-radius: 1rem;
         cursor: pointer;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        background: $button-color;
+        color: $button-background;
       }
 
       p {
@@ -84,6 +90,47 @@
           height: 100px;
         }
       }
+    }
+  }
+}
+
+@media only screen and (width <= 1200px) {
+  .contact {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      color: #d47195;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-panel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .company-data {
+        margin-bottom: 3rem;
+      }
+
+      .contact-form {
+        width: 80vw;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (width <= 800px) {
+  .contact {
+    .contact-form {
+      width: 100vw;
+      margin: auto;
     }
   }
 }
